@@ -85,7 +85,7 @@ function ScrollPanelInput() {
     const inputRows = [];
     for (let i:any = 0; i < 20; i++) {
         //inputRows.push();
-        inputRows.push(<>Input {i}:<br/><input key={i} style={{width:"200px"}} /><br/></>);
+        inputRows.push(<><br/>Input {i}:<br/><input key={i} style={{width:"200px"}} /><br/></>);
     }
     
     return (
