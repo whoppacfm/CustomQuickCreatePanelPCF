@@ -54,13 +54,13 @@ const createContentArea = (item: IScrollablePaneExampleItem) => (
     <div
         key={item.index}
         style={{
-        backgroundColor: item.color,
+            backgroundColor: item.color,
         }}
     >
         <Sticky stickyPosition={StickyPositionType.Both}>
-        <div role="heading" aria-level={1} className={classNames.sticky}>
-            Sticky Component #{item.index + 1}
-        </div>
+            <div role="heading" aria-level={1} className={classNames.sticky}>
+                Sticky Component #{item.index + 1}
+            </div>
         </Sticky>
         <div className={classNames.textContent}>{item.text}</div>
     </div>
@@ -79,9 +79,7 @@ const ScrollPanelData: React.FunctionComponent = () => (
     </div>
 );
 
-
-function ScrollPanelInput() {
-    
+const ScrollPanelInput: React.FunctionComponent = () => {
     const inputRows = [];
     for (let i:any = 0; i < 20; i++) {
         //inputRows.push();
